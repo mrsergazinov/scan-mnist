@@ -99,7 +99,8 @@ def main():
     # Training
     print(colored('Starting main loop', 'blue'))
     for epoch in range(start_epoch, p['epochs']):
-        print(colored('Epoch %d/%d' %(epoch, p['epochs']), 'yellow'))
+        print(epoch)
+        print(colored('Epoch {0}/{1}'.format(epoch, p['epochs']), 'yellow'))
         print(colored('-'*15, 'yellow'))
 
         # Adjust lr
